@@ -1,0 +1,41 @@
+/**
+ * http://css-tricks.com/snippets/css/webkit-keyframe-animation-syntax/
+ */
+@keyframes moveit {
+    0% {
+        opacity:.3;
+        font-size:1em;
+        color:black;
+    }
+    20%{
+        opacity:.5;
+        font-size:1.15em;
+        color:red;
+    }
+    45%{
+        opacity:.65;
+        font-size:3.4em;
+        color:green;
+    }
+    65%{
+        opacity:.85;
+        color:pink;
+        font-size:2em;
+    }
+    100% {
+        opacity:1;
+        color:blue;
+        font-size:5em;
+    }
+}
+#box {
+    display:inline-block;
+    width:100%;
+    animation: moveit 15s infinite;
+}
+footer, header, section{
+    display:block;
+    margin:1em auto;
+    width:95%;
+    text-align:center;
+}
