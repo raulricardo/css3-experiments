@@ -2,7 +2,7 @@
  * http://css-tricks.com/snippets/css/webkit-keyframe-animation-syntax/
  */
 @keyframes moveit {
-    0% {
+    0%, 100% {
         opacity:.3;
         font-size:1em;
         color:black;
@@ -22,7 +22,7 @@
         color:pink;
         font-size:2em;
     }
-    100% {
+    79% {
         opacity:1;
         color:blue;
         font-size:5em;
@@ -31,11 +31,26 @@
 #box {
     display:inline-block;
     width:100%;
-    animation: moveit 15s infinite;
+    animation: moveit 5s 2;
 }
 footer, header, section{
     display:block;
     margin:1em auto;
     width:95%;
     text-align:center;
+}
+
+@keyframe spinning {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#circle {
+    height:50px;
+    width:50px;
+    animation:spinning 4s 2s 2 alternate backwards;
 }
