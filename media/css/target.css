@@ -1,0 +1,82 @@
+article.accordion {
+    background-color:#666;
+    border-radius:5px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 0.5em 1px 0.5em;
+    width: 30em;
+}
+article.accordion section {
+    background-color: #333;
+    border-radius: 3px;
+    color: #333;
+    display: block;
+    height: 2em;
+    margin: 0 0 0.5em 0;
+    overflow: hidden;
+    padding: 0 1em;
+    width: 28em;
+}
+article.accordion section h2 {
+    color: #ddd;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+article.accordion section h2 a {
+    color: inherit;
+    display: block;
+    line-height: 2em;
+    outline: 0 none;
+    text-decoration: none;
+    width: 100%;
+}
+article.accordion section:target {
+    height: 15em;
+    background-color: #fff;
+}
+article.accordion section:target h2 {
+    font-size: 1.6em;
+    color: #333;
+}
+article.accordion section,
+article.accordion section h2{
+    transition: all 1s ease;
+}
+footer, header, header nav, section {
+    display:block;
+    margin:0 auto;
+    width:100%;
+}
+header{
+    background-color:#33A36F;
+    color:#DEDEDE;
+}
+header nav{
+    background-color:#779cd8;
+    color:#f03283;
+}
+
+header nav li {
+    background-color:#fa2;
+    display:inline-block;
+    height:7em;
+    line-height:5em;
+    list-style-type:none;
+    width:10em;
+}
+header nav ul{
+    background-color:#abc;
+    border-color:black;
+    border-radius:20px 70px 50px 30px;
+    border-style:dotted;
+    border-width:thick;
+    display:block;
+    margin:0 auto;
+    text-align:center;
+    width:50em;
+}
